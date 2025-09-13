@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  fastapi-test-technique:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      TT_COMPANY: MA PETITE ENTREPRISE
+      TT_CUSTOMTASKS: |
+        Vous devez rédiger un Dockerfile et un docker-compose pour faire fonctionner cette application
+        Vous n'avez pas le droit de changer le code source
+
+        Vous devez rédiger les manifests kubernetes pour faire fonctionner l'appli dans un kind
+
+        Vous devez mettre en place un workflow ci/cd de votre choix en lien avec cette application
+
+        BONUS:
+        - Proposez une méthode pour obtenir le temps de réalisation d'un candidat.
+        - Entourez cette appli d'un ecosystème de production (vous définirez vous même "ecosystème de production")
+
+        Vous devez creer une archive {nom-candidat}-{date}.zip avec les éléments suivants:
+        - le script pour récuperer le code source de l'application (ou la liste des commandes)
+        - le Dockerfile
+        - le docker-compose
+        - les manifests kubernetes dans un dossier 'kubernetes'
+        - un README.md qui contiendra
+          + une explication de votre méthode de travail
+          + une explication de l'utilisation de vos scripts
+          + vos remarques sur l'entretien
+        Vous devez envoyer cette archive au mail suivant: toto@tata.tutu
